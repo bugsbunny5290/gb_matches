@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node server.js",
+    "start": "concurrently \"nodemon server.js\" \"cd frontend && ng serve --open\"",
     "dev": "nodemon server.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "debug": "DEBUG=express:* node server.js"
