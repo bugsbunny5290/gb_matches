@@ -6,6 +6,7 @@ const cors = require("cors");
 const matches = require("./routes/api/matches");
 const addmatch = require("./routes/api/addmatch");
 const updatematch = require("./routes/api/updatematch");
+const showadded = require("./routes/api/showadded");
 
 require("dotenv").config();
 
@@ -29,6 +30,7 @@ app.use("/api/matches/role", matches);
 app.use("/api/matches/add", addmatch);
 app.use("/api/matches/update", updatematch);
 app.use("/api/matches/delete", updatematch);
+app.use("/api/matches/fetch/newdata", showadded);
 
 const PORT = process.env.PORT || 5000;
 
