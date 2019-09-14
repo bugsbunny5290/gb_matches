@@ -10,9 +10,10 @@ import { AppComponent } from './app.component';
 import { MatchesComponent } from './components/matches/matches.component';
 import { MaterialModule } from './material.module';
 import { NewMatchComponent } from './components/new-match/new-match.component';
+import { ShowRecentComponent } from './components/show-recent/show-recent.component';
 
 @NgModule({
-  declarations: [AppComponent, MatchesComponent, NewMatchComponent],
+  declarations: [AppComponent, MatchesComponent, NewMatchComponent, ShowRecentComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,

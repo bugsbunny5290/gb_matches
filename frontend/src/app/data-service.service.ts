@@ -21,6 +21,10 @@ export class DataService {
     return this.http.get<Match[]>(`${this.url}/api/matches`);
   }
 
+  getRecent(): Observable<Match[]> {
+    return this.http.get<Match[]>(`${this.url}/api/matches/fetch/newdata`);
+  }
+
   addMatch(newMatch: AddMatch[]): Observable<AddMatch[]> {
     return this.http
       .post<AddMatch[]>(`${this.url}/api/matches/add`, newMatch, httpOptions)
