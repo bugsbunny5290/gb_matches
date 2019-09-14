@@ -1,0 +1,15 @@
+
+
+h1 {
+  text-align: center;
+}
+
+span {
+  padding-right: 1rem;
+  text-emphasis: none;
+  text-decoration: none;
+}
+
+.navbar-custom {
+  justify-content: space-between;
+}

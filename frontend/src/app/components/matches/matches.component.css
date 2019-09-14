@@ -1,0 +1,16 @@
+th,
+td {
+  overflow: hidden;
+  width: 20rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.match-table {
+  font-family: Roboto, Arial, sans-serif;
+  width: 100%;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
