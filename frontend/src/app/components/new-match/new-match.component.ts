@@ -15,9 +15,6 @@ export class NewMatchComponent implements OnInit {
   loading = false;
   success = false;
 
-  revert() {
-    this.addForm.reset();
-  }
 
   constructor(private fb: FormBuilder, private dataService: DataService) {}
 
@@ -40,7 +37,7 @@ export class NewMatchComponent implements OnInit {
     this.loading = true;
     const formData: AddMatch[] = this.addForm.value;
     try {
-      await this.dataService.addMatch(formData).subscribe();
+      this.dataService.addMatch(formData).subscribe();
       this.success = true;
     } catch (error) {
       console.log(error);
